@@ -15,11 +15,7 @@ Main content border color: #dddddd
 
 fonts:
 For heading fonts use font-family: 'Georgia', Times, Times New Roman, serif;.
-For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;;
-assets/images/Iam.jpg
-
-Доделать sticky footer
-
+For all other fonts use 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
 **/
 
 * {
@@ -43,12 +39,12 @@ header::after, header div::after, section::after {
     clear: both;
 }
 header div {
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     position: relative;
 }
 .container {
-	width:960px;
+	max-width:960px;
 	margin-right: auto;
 	margin-left: auto;
 }
@@ -152,8 +148,23 @@ figcaption {
 }
 
 
-
-
+/***************Media***********/
+@media only screen and (max-width: 980px){
+    html {position:relative;}
+    section article, header div {width:97%;}
+    header{padding:2%;}
+    h1{font-size: 23px;}
+    img.myPhoto{margin:10px;}
+}
+@media only screen and (max-width: 524px){
+nav {
+    float: left;
+    margin-top: 30px;
+    position: relative;
+}
+ul{padding-left:0px;}
+li a{margin-left: 0;}
+}
 
 
 
