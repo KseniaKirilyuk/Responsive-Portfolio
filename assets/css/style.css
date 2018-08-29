@@ -151,7 +151,7 @@ figcaption {
 /***************Media***********/
 @media only screen and (max-width: 980px){
     html {position:relative;}
-    section article, header div {width:97%;}
+    section article, header div {width:100%;}
     header{padding:2%;}
     h1{font-size: 23px;}
     img.myPhoto{margin:10px;}
@@ -163,7 +163,7 @@ nav {
     position: relative;
 }
 ul{padding-left:0px;}
-li a{margin-left: 0;}
+  li a{margin-left: 0;}
 }
 
 
